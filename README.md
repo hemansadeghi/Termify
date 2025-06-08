@@ -26,6 +26,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 - **[httpie](https://httpie.io/)** — User-friendly HTTP client for testing and interacting with APIs.
 - **[sshuttle](https://github.com/sshuttle/sshuttle)** — Transparent proxy server for tunneling network traffic over SSH.
 - **[youtube-dl](https://github.com/ytdl-org/youtube-dl)** — Command-line downloader for YouTube and other video platforms.
+- **[glances](https://github.com/nicolargo/glances)** — Cross-platform system monitoring tool with a sleek, curses-based terminal UI. It provides real-time information about CPU, memory, disk I/O, network, and more.
 
 ## ⚙️ Development and Data Processing
 
