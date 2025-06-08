@@ -1,54 +1,102 @@
-# Termify — Awesome CLI Tools Collection
+#!/bin/bash
 
-A curated and up-to-date collection of command-line interface (CLI) tools for developers, sysadmins, and terminal enthusiasts.
+# termify-sentinel.sh
+# A script to check GitHub repositories listed in README.md for deprecation (archived status)
+# and verify non-GitHub links for dead links using 'deadlink' tool.
+#
+# Usage: ./termify-sentinel.sh [--help]
+# Runs parallel checks for better performance.
+#
+# Output:
+#   Deprecated repositories are saved in deprecated_termify.txt
+#
 
----
+PARALLEL_JOBS=6
+OUTPUT_FILE="deprecated_termify.txt"
+README_FILE="README.md"
 
-## 🔎 Search and Text Processing
+print_help() {
+  cat <<EOF
+Usage: $0 [--help|-h|help]
 
-- **[fzf](https://github.com/junegunn/fzf)** — A fast, interactive fuzzy finder for files, command history, and more.
-- **[ripgrep (rg)](https://github.com/BurntSushi/ripgrep)** — Fast, recursive search tool optimized for searching plain text.
-- **[ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher)** — A lightning-fast grep alternative optimized for searching codebases.
+Checks GitHub repositories in $README_FILE for archive status (deprecation).
+Also checks non-GitHub links for dead links using 'deadlink' if installed.
 
-## 🖥️ System Monitoring and Management
+Options:
+  --help, -h, help   Show this help message and exit.
 
-- **[htop](https://htop.dev/)** — Interactive process viewer and system monitor with colorful interface.
-- **[ncdu](https://dev.yorhel.nl/ncdu)** — Disk usage analyzer with an interactive text interface.
+Output:
+  Deprecated repos are logged to: $OUTPUT_FILE
 
-## 📂 File and Directory Management
+Note:
+  Requires 'curl' for GitHub checks and 'deadlink' (optional) for link checking.
+EOF
+}
 
-- **[exa](https://the.exa.website/)** — Modern, colorful replacement for `ls` with extra features.
-- **[tree](http://mama.indstate.edu/users/ice/tree/)** — Displays directory contents in a tree-like format.
-- **[bat](https://github.com/sharkdp/bat)** — `cat` clone with syntax highlighting and Git integration.
+# Check if GitHub repos in README are archived
+check_archived_github_repos() {
+  echo "Checking GitHub repositories for archived status..."
 
-## 🌐 Networking and Web
+  # Extract GitHub repo URLs from markdown links
+  repos=$(grep -Eo '\[.*\]\((https://github.com/[^)]+)\)' "$README_FILE" | grep -Eo 'https://github.com/[^)]+')
 
-- **[httpie](https://httpie.io/)** — User-friendly HTTP client for testing and interacting with APIs.
-- **[sshuttle](https://github.com/sshuttle/sshuttle)** — Transparent proxy server for tunneling network traffic over SSH.
-- **[youtube-dl](https://github.com/ytdl-org/youtube-dl)** — Command-line downloader for YouTube and other video platforms.
+  if [[ -z "$repos" ]]; then
+    echo "No GitHub repositories found in $README_FILE."
+    return
+  fi
 
-## ⚙️ Development and Data Processing
+  i=0
+  for repo_url in $repos; do
+    ((i=i % PARALLEL_JOBS)); ((i++ == 0)) && wait
 
-- **[jq](https://stedolan.github.io/jq/)** — Command-line JSON processor for filtering and transforming JSON data.
-- **[tldr](https://tldr.sh/)** — Simplified and community-driven man pages for common CLI commands.
-- **[asciinema](https://asciinema.org/)** — Terminal session recorder that allows you to share terminal demos as lightweight videos.
+    {
+      if curl -SsL "$repo_url" | grep -q "This repository has been archived by the owner on"; then
+        echo "DEPRECATED $repo_url" | tee -a "$OUTPUT_FILE"
+      else
+        echo "CHECKED $repo_url"
+      fi
+    } &
+  done
+  wait
+  echo "GitHub repo check completed."
+}
 
-## 🔧 Integration and Utilities
+# Check non-GitHub links for dead links using deadlink
+check_non_github_links() {
+  if ! command -v deadlink &>/dev/null; then
+    echo "Warning: 'deadlink' tool not found. Skipping non-GitHub link check."
+    return
+  fi
 
-- **[fzf-tmux](https://github.com/junegunn/fzf/wiki/Integration#tmux)** — Integration of `fzf` with `tmux` for better terminal multiplexing experience.
+  echo "Checking non-GitHub links for dead links..."
 
----
+  tmpfile=$(mktemp)
+  grep -Eo 'https?://[^) ]+' "$README_FILE" | grep -v 'https://github.com' > "$tmpfile"
 
-## 🔒 Termify Sentinel — Repository Health Checker
+  if [[ ! -s $tmpfile ]]; then
+    echo "No non-GitHub links found to check."
+    rm -f "$tmpfile"
+    return
+  fi
 
-To ensure this curated list stays fresh and reliable, Termify includes a handy script:
+  deadlink check "$tmpfile"
+  rm -f "$tmpfile"
 
-- **Checks GitHub repositories** listed in the README for archival (deprecation).
-- **Verifies non-GitHub URLs** to detect broken or dead links.
+  echo "Non-GitHub link check completed."
+}
 
-### Usage
+if [[ "$1" =~ ^(--help|-h|help)$ ]]; then
+  print_help
+  exit 0
+fi
 
-Run the script anytime to audit repository statuses:
+echo "Starting Termify Sentinel..."
 
-```bash
-./termify-sentinel.sh
+# Clear output file before starting
+> "$OUTPUT_FILE"
+
+check_archived_github_repos
+check_non_github_links
+
+echo "Termify Sentinel finished."
+echo "Deprecated repos saved in: $OUTPUT_FILE"
