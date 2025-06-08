@@ -79,7 +79,7 @@ Feel free to contribute by submitting new tools, improving descriptions, or upda
 
 ## 📄 License
 
-MIT © YourName, 2025
+MIT © Heman sadeghi, 2025
 
 ---
 
