@@ -23,7 +23,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 - **[bat](https://github.com/sharkdp/bat)** — `cat` clone with syntax highlighting and Git integration.
 
 ## 🌐 Networking and Web
-
+- **[nmap](https://nmap.org)** — A powerful and widely-used network scanner for discovering devices, open ports, and running services. Ideal for sysadmins and security auditing.
 - **[httpie](https://httpie.io/)** — User-friendly HTTP client for testing and interacting with APIs.
 - **[sshuttle](https://github.com/sshuttle/sshuttle)** — Transparent proxy server for tunneling network traffic over SSH.
 - **[youtube-dl](https://github.com/ytdl-org/youtube-dl)** — Command-line downloader for YouTube and other video platforms.
