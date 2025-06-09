@@ -21,6 +21,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 - **[exa](https://the.exa.website/)** — Modern, colorful replacement for `ls` with extra features.
 - **[tree](http://mama.indstate.edu/users/ice/tree/)** — Displays directory contents in a tree-like format.
 - **[bat](https://github.com/sharkdp/bat)** — `cat` clone with syntax highlighting and Git integration.
+- **[tldr](https://tldr.sh/)** — Simplified and community-driven man pages for common CLI commands.
 
 ## 🌐 Networking and Web
 - **[nmap](https://nmap.org)** — A powerful and widely-used network scanner for discovering devices, open ports, and running services. Ideal for sysadmins and security auditing.
