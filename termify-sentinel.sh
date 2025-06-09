@@ -5,11 +5,8 @@
 # and verify non-GitHub links for dead links using 'deadlink' tool.
 #
 # Usage: ./termify-sentinel.sh [--help]
-# Runs parallel checks for better performance.
-#
 # Output:
 #   Deprecated repositories are saved in deprecated_termify.txt
-#
 
 PARALLEL_JOBS=6
 OUTPUT_FILE="deprecated_termify.txt"
@@ -19,8 +16,9 @@ print_help() {
   cat <<EOF
 Usage: $0 [--help|-h|help]
 
-Checks GitHub repositories in $README_FILE for archive status (deprecation).
-Also checks non-GitHub links for dead links using 'deadlink' if installed.
+Checks GitHub repositories in $README_FILE for archive status (deprecation)
+using GitHub's API. Also checks non-GitHub links for dead links using 'deadlink'
+if it is installed.
 
 Options:
   --help, -h, help   Show this help message and exit.
@@ -29,13 +27,14 @@ Output:
   Deprecated repos are logged to: $OUTPUT_FILE
 
 Note:
-  Requires 'curl' for GitHub checks and 'deadlink' (optional) for link checking.
+  Requires 'curl' for GitHub API requests.
+  Optional: 'deadlink' for checking non-GitHub URLs.
 EOF
 }
 
-# Check if GitHub repos in README are archived
+# Check if GitHub repos are archived using GitHub API
 check_archived_github_repos() {
-  echo "Checking GitHub repositories for archived status..."
+  echo "Checking GitHub repositories (via API) for archived status..."
 
   # Extract GitHub repo URLs from markdown links
   repos=$(grep -Eo '\[.*\]\((https://github.com/[^)]+)\)' "$README_FILE" | grep -Eo 'https://github.com/[^)]+')
@@ -50,15 +49,23 @@ check_archived_github_repos() {
     ((i=i % PARALLEL_JOBS)); ((i++ == 0)) && wait
 
     {
-      if curl -SsL "$repo_url" | grep -q "This repository has been archived by the owner on"; then
+      # Strip base URL to get owner/repo
+      repo_path=$(echo "$repo_url" | sed -E 's|https://github.com/||' | sed 's|/$||')
+      api_url="https://api.github.com/repos/$repo_path"
+
+      response=$(curl -s "$api_url")
+      archived=$(echo "$response" | grep '"archived":' | awk '{print $2}' | tr -d ',')
+
+      if [[ "$archived" == "true" ]]; then
         echo "DEPRECATED $repo_url" | tee -a "$OUTPUT_FILE"
       else
         echo "CHECKED $repo_url"
       fi
     } &
   done
+
   wait
-  echo "GitHub repo check completed."
+  echo "GitHub API repo check completed."
 }
 
 # Check non-GitHub links for dead links using deadlink
@@ -85,6 +92,7 @@ check_non_github_links() {
   echo "Non-GitHub link check completed."
 }
 
+# Handle help
 if [[ "$1" =~ ^(--help|-h|help)$ ]]; then
   print_help
   exit 0
@@ -92,7 +100,7 @@ fi
 
 echo "Starting Termify Sentinel..."
 
-# Clear output file before starting
+# Clear output file
 > "$OUTPUT_FILE"
 
 check_archived_github_repos
