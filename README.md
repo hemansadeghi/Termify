@@ -12,9 +12,11 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 
 ## 🖥️ System Monitoring and Management
 
-- **[htop](https://htop.dev/)** — Interactive process viewer and system monitor with colorful interface.
-- **[ncdu](https://dev.yorhel.nl/ncdu)** — Disk usage analyzer with an interactive text interface.
-- **[glances](https://github.com/nicolargo/glances)** — Cross-platform system monitoring tool with a sleek, curses-based terminal UI. It provides real-time information about CPU, memory, disk I/O, network, and more.
+- **[htop](https://htop.dev/)** — Interactive process viewer with a colorful interface.
+- **[ncdu](https://dev.yorhel.nl/ncdu)** — Disk usage analyzer with a simple text UI.
+- **[glances](https://github.com/nicolargo/glances)** — Cross-platform system monitor with real-time stats.
+- **[tmux](https://github.com/tmux/tmux)** — Terminal multiplexer for managing multiple sessions in one window.
+
 
 ## 📂 File and Directory Management
 
