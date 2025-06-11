@@ -49,6 +49,9 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 |-------------------------------------|-----------------------------------------------------------------|
 | [jq](https://stedolan.github.io/jq/)                  | Command-line JSON processor for filtering and transforming JSON data.|
 | [asciinema](https://asciinema.org/)                   | Terminal session recorder that allows you to share terminal demos as lightweight videos.|
+| [fx](https://github.com/antonmedv/fx)                | Command-line JSON viewer with syntax highlighting and query support. |
+| [glow](https://github.com/charmbracelet/glow)        | Render markdown files with style in the terminal.                    |
+
 
 ## 🔧 Integration and Utilities
 
