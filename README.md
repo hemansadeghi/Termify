@@ -58,6 +58,9 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | Tool                                  | Description                                                       |
 |-------------------------------------|-----------------------------------------------------------------|
 | [fzf-tmux](https://github.com/junegunn/fzf/wiki/Integration#tmux) | Integration of `fzf` with `tmux` for better terminal multiplexing experience.|
+| [direnv](https://github.com/direnv/direnv)           | Automatically loads and unloads environment variables based on your current directory. |
+| [entr](https://github.com/eradman/entr)              | Run arbitrary commands when files change — great for automation and development. |
+
 
 ---
 
