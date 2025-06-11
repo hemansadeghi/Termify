@@ -11,6 +11,9 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [fzf](https://github.com/junegunn/fzf)           | A fast, interactive fuzzy finder for files, command history, and more.    |
 | [ripgrep (rg)](https://github.com/BurntSushi/ripgrep) | Fast, recursive search tool optimized for searching plain text.  |
 | [ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher) | A lightning-fast grep alternative optimized for searching codebases. |
+| [sd](https://github.com/chmln/sd) | Intuitive and fast alternative to `sed` with regex support for structured text replacement. |
+| [ack](https://beyondgrep.com/) | A grep-like search tool optimized for large codebases and language-aware searches. |
+| [pt (The Platinum Searcher)](https://github.com/monochromegane/the_platinum_searcher) | A fast and feature-rich search tool like `ag`, written in Go. |
 
 ## 🖥️ System Monitoring and Management
 
