@@ -16,6 +16,8 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [pt (The Platinum Searcher)](https://github.com/monochromegane/the_platinum_searcher) | A fast and feature-rich search tool like `ag`, written in Go. |
 | [peco](https://github.com/peco/peco) | Interactive filtering tool similar to `fzf`, useful for command pipelines. |
 | [grex](https://github.com/pemistahl/grex) | Generates regular expressions from user-provided test cases. |
+| [ugrep](https://github.com/Genivia/ugrep) | Ultra-fast grep with UI interface, file globs, colors, and JSON support. |
+| [lazygit](https://github.com/jesseduffield/lazygit) | Simple terminal UI for git commands with search and filtering support. |
 
 ## 🖥️ System Monitoring and Management
 
@@ -27,6 +29,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [tmux](https://github.com/tmux/tmux)                | Terminal multiplexer for managing multiple sessions in one window.|
 | [bpytop](https://github.com/aristocratos/bpytop)   | Resource monitor with a slick UI in the terminal.               |
 | [iotop](https://linux.die.net/man/1/iotop)          | Show I/O usage by processes in real-time.                       |
+| [bottom](https://github.com/ClementTsang/bottom)    | Yet another cross-platform graphical process/system monitor.    |
 
 ## 📂 File and Directory Management
 
@@ -38,6 +41,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [tldr](https://tldr.sh/)                            | Simplified and community-driven man pages for common CLI commands.|
 | [vifm](https://github.com/vifm/vifm)                | A file manager with vi-like keybindings for the terminal.         |
 | [ranger](https://github.com/ranger/ranger)          | Terminal-based file manager with previews and vim-style controls. |
+| [broot](https://github.com/Canop/broot)             | Interactive tree view with fuzzy search and file preview.        |
 
 ## 🌐 Networking and Web
 
@@ -46,9 +50,10 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [httpie](https://httpie.io/)                       | User-friendly HTTP client for testing and interacting with APIs.|
 | [sshuttle](https://github.com/sshuttle/sshuttle)  | Transparent proxy server for tunneling network traffic over SSH. |
 | [youtube-dl](https://github.com/ytdl-org/youtube-dl) | Command-line downloader for YouTube and other video platforms.   |
-| [nmap](https://nmap.org/)                           | Powerful network scanner for discovering devices, open ports, and services. Ideal for network admins and security pros.|
+| [nmap](https://nmap.org/)                           | Powerful network scanner for discovering devices, open ports, and services. |
 | [aria2](https://github.com/aria2/aria2)             | Lightweight multi-protocol & multi-source command-line download utility. |
 | [speedtest-cli](https://github.com/sivel/speedtest-cli) | Test your internet bandwidth using speedtest.net from the terminal. |
+| [curlie](https://github.com/rs/curlie)              | Frontend for `curl` that mimics HTTPie syntax.                  |
 
 ## ⚙️ Development and Data Processing
 
@@ -60,6 +65,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [glow](https://github.com/charmbracelet/glow)        | Render markdown files with style in the terminal.                    |
 | [yq](https://github.com/mikefarah/yq)                | YAML processor with a jq-like syntax. Great for config files.       |
 | [dasel](https://github.com/TomWright/dasel)          | Query and modify data structures in JSON, YAML, TOML, XML and more. |
+| [graph-cli](https://github.com/marqeta/graph-cli)    | Generate ASCII graphs and charts directly from the terminal.       |
 
 ## 🔧 Integration and Utilities
 
@@ -70,6 +76,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [entr](https://github.com/eradman/entr)              | Run arbitrary commands when files change — great for automation and development. |
 | [watchexec](https://github.com/watchexec/watchexec)  | Executes commands in response to file changes. Useful for live development. |
 | [just](https://github.com/casey/just)                | A handy way to define and run project-specific scripts with a simple `justfile`. |
+| [task](https://github.com/go-task/task)              | A task runner / build tool similar to Make but easier to use.   |
 
 ---
 
@@ -86,35 +93,3 @@ Run the script anytime to audit repository statuses:
 
 ```bash
 ./termify-sentinel.sh
-```
-
-*Requirements:*  
-- `curl` (for HTTP requests)  
-- `deadlink` (optional, for dead link checks; install via npm or your package manager)
-
-Deprecated or archived repositories will be listed in `deprecated_termify.txt`.
-
----
-
-## 🚀 Getting Started
-
-Clone the repository and explore the curated CLI tools:
-
-```bash
-git clone https://github.com/hemansadeghi/Termify.git
-cd Termify
-chmod +x termify-sentinel.sh
-./termify-sentinel.sh
-```
-
-Feel free to contribute by submitting new tools, improving descriptions, or updating entries!
-
----
-
-## 📄 License
-
-MIT © Heman Sadeghi, 2025
-
----
-
-Enjoy your terminal with these awesome CLI tools!
