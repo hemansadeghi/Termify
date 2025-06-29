@@ -57,15 +57,18 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 
 ## ⚙️ Development and Data Processing
 
-| Tool                                  | Description                                                       |
-|-------------------------------------|-----------------------------------------------------------------|
-| [jq](https://stedolan.github.io/jq/)                  | Command-line JSON processor for filtering and transforming JSON data.|
-| [asciinema](https://asciinema.org/)                   | Terminal session recorder that allows you to share terminal demos as lightweight videos.|
-| [fx](https://github.com/antonmedv/fx)                | Command-line JSON viewer with syntax highlighting and query support. |
-| [glow](https://github.com/charmbracelet/glow)        | Render markdown files with style in the terminal.                    |
-| [yq](https://github.com/mikefarah/yq)                | YAML processor with a jq-like syntax. Great for config files.       |
-| [dasel](https://github.com/TomWright/dasel)          | Query and modify data structures in JSON, YAML, TOML, XML and more. |
-| [graph-cli](https://github.com/marqeta/graph-cli)    | Generate ASCII graphs and charts directly from the terminal.       |
+| Tool                                      | Description                                                                 |
+|-------------------------------------------|-----------------------------------------------------------------------------|
+| [jq](https://stedolan.github.io/jq/)      | Command-line JSON processor for filtering and transforming JSON data.       |
+| [asciinema](https://asciinema.org/)       | Terminal session recorder that allows you to share terminal demos as lightweight videos. |
+| [fx](https://github.com/antonmedv/fx)     | Command-line JSON viewer with syntax highlighting and query support.        |
+| [glow](https://github.com/charmbracelet/glow) | Render markdown files with style in the terminal.                          |
+| [yq](https://github.com/mikefarah/yq)     | YAML processor with a jq-like syntax. Great for config files.              |
+| [dasel](https://github.com/TomWright/dasel) | Query and modify data structures in JSON, YAML, TOML, XML and more.        |
+| [graph-cli](https://github.com/marqeta/graph-cli) | Generate ASCII graphs and charts directly from the terminal.             |
+| [httpie](https://httpie.io/)              | User-friendly HTTP client for testing APIs with JSON support and clean syntax. |
+| [bat](https://github.com/sharkdp/bat)     | A `cat` clone with syntax highlighting and Git integration.                |
+| [fzf](https://github.com/junegunn/fzf)    | Interactive fuzzy finder for searching files, commands, processes, and more. |
 
 ## 🔧 Integration and Utilities
 
