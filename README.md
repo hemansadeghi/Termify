@@ -1,3 +1,4 @@
+
 # Termify — Awesome CLI Tools Collection
 
 A curated and up-to-date collection of command-line interface (CLI) tools for developers, sysadmins, and terminal enthusiasts.
@@ -85,10 +86,10 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 
 ## 🔒 Termify Sentinel — Repository Health Checker
 
-To ensure this curated list stays fresh and reliable, Termify includes a handy script:
+To ensure this curated list stays fresh and reliable, Termify includes a handy script that:
 
-- **Checks GitHub repositories** listed in the README for archival (deprecation).  
-- **Verifies non-GitHub URLs** to detect broken or dead links.
+- Checks GitHub repositories listed in the README for archival (deprecation).  
+- Verifies non-GitHub URLs to detect broken or dead links.
 
 ### Usage
 
@@ -96,3 +97,36 @@ Run the script anytime to audit repository statuses:
 
 ```bash
 ./termify-sentinel.sh
+```
+
+### Requirements
+
+- `curl` (for HTTP requests)  
+- `deadlink` (optional, for dead link checks; install via npm or your package manager)  
+
+### Output
+
+Deprecated or archived repositories will be listed in `deprecated_termify.txt`.
+
+---
+
+🚀 **Getting Started**
+
+```bash
+git clone https://github.com/hemansadeghi/Termify.git
+cd Termify
+chmod +x termify-sentinel.sh
+./termify-sentinel.sh
+```
+
+Feel free to contribute by submitting new tools, improving descriptions, or updating entries!
+
+---
+
+📄 **License**
+
+MIT © Heman Sadeghi, 2025
+
+---
+
+Enjoy your terminal with these awesome CLI tools!
