@@ -43,6 +43,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [vifm](https://github.com/vifm/vifm)                | A file manager with vi-like keybindings for the terminal.         |
 | [ranger](https://github.com/ranger/ranger)          | Terminal-based file manager with previews and vim-style controls. |
 | [broot](https://github.com/Canop/broot)             | Interactive tree view with fuzzy search and file preview.        |
+| [dust](https://github.com/bootandy/dust)             | A more intuitive version of `du` in rust    |
 
 ## 🌐 Networking and Web
 
