@@ -87,7 +87,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | Tool                                  | Description                                                       |
 |-------------------------------------|-----------------------------------------------------------------|
 | [asciiquarium](https://github.com/cmatsuoka/asciiquarium) | Asciiquarium is an aquarium/sea animation in ASCII art.|
-
+| [cmatrix](https://github.com/abishekvashok/cmatrix) | Terminal based "The Matrix" like implementation.|
 
 ---
 
