@@ -83,6 +83,12 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [just](https://github.com/casey/just)                | A handy way to define and run project-specific scripts with a simple `justfile`. |
 | [task](https://github.com/go-task/task)              | A task runner / build tool similar to Make but easier to use.   |
 
+## 👾 Fun Utilities 
+| Tool                                  | Description                                                       |
+|-------------------------------------|-----------------------------------------------------------------|
+| [asciiquarium](https://github.com/cmatsuoka/asciiquarium) | Asciiquarium is an aquarium/sea animation in ASCII art.|
+| [cmatrix](https://github.com/abishekvashok/cmatrix) | Terminal based "The Matrix" like implementation.|
+
 ---
 
 ## 🔒 Termify Sentinel — Repository Health Checker
