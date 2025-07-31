@@ -84,6 +84,10 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [task](https://github.com/go-task/task)              | A task runner / build tool similar to Make but easier to use.   |
 
 ## 👾 Fun Utilities 
+| Tool                                  | Description                                                       |
+|-------------------------------------|-----------------------------------------------------------------|
+| [asciiquarium](https://github.com/cmatsuoka/asciiquarium) | Asciiquarium is an aquarium/sea animation in ASCII art.|
+
 
 ---
 
