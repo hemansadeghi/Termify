@@ -88,7 +88,7 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 |-------------------------------------|-----------------------------------------------------------------|
 | [asciiquarium](https://github.com/cmatsuoka/asciiquarium) | Asciiquarium is an aquarium/sea animation in ASCII art.|
 | [cmatrix](https://github.com/abishekvashok/cmatrix) | Terminal based "The Matrix" like implementation.|
-
+| [astroterm](https://github.com/da-luce/astroterm) | It displays the real-time positions of stars, planets, constellations, and more, all within your terminal! |
 ---
 
 ## 🔒 Termify Sentinel — Repository Health Checker
