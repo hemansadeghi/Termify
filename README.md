@@ -35,6 +35,9 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [bpytop](https://github.com/aristocratos/bpytop)   | Resource monitor with a slick UI in the terminal.               |
 | [iotop](https://linux.die.net/man/1/iotop)          | Show I/O usage by processes in real-time.                       |
 | [bottom](https://github.com/ClementTsang/bottom)    | Yet another cross-platform graphical process/system monitor.    |
+| [nmon](https://nmon.sourceforge.net/pmwiki.php) | Performance monitor for Linux and AIX systems. |
+| [procs](https://github.com/dalance/procs) | Modern replacement for `ps` with color output and more info. |
+
 
 ## 📂 File and Directory Management
 
