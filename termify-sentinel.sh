@@ -36,21 +36,22 @@ EOF
 check_archived_github_repos() {
   echo "Checking GitHub repositories (via API) for archived status..."
 
-  # Extract GitHub repo URLs from markdown links
-  repos=$(grep -Eo '\[.*\]\((https://github.com/[^)]+)\)' "$README_FILE" | grep -Eo 'https://github.com/[^)]+')
+  # Extract unique owner/repo paths from README links
+  repo_paths=$(grep -oE 'https://github.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+' "$README_FILE" \
+    | sed 's|https://github.com/||' \
+    | sort -u)
 
-  if [[ -z "$repos" ]]; then
+  if [[ -z "$repo_paths" ]]; then
     echo "No GitHub repositories found in $README_FILE."
     return
   fi
 
   i=0
-  for repo_url in $repos; do
+  for repo_path in $repo_paths; do
     ((i=i % PARALLEL_JOBS)); ((i++ == 0)) && wait
 
     {
-      # Strip base URL to get owner/repo
-      repo_path=$(echo "$repo_url" | sed -E 's|https://github.com/||' | sed 's|/$||')
+      repo_url="https://github.com/$repo_path"
       api_url="https://api.github.com/repos/$repo_path"
 
       response=$(curl -s "$api_url")
