@@ -82,6 +82,9 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [watchexec](https://github.com/watchexec/watchexec)  | Executes commands in response to file changes. Useful for live development. |
 | [just](https://github.com/casey/just)                | A handy way to define and run project-specific scripts with a simple `justfile`. |
 | [task](https://github.com/go-task/task)              | A task runner / build tool similar to Make but easier to use.   |
+| [autoenv](https://github.com/hyperupcall/autoenv)    | Similar to `direnv`, automatically loads environment variables when entering a directory. |
+| [chezmoi](https://www.chezmoi.io/)                   | Manage your dotfiles across multiple machines securely and consistently. |
+| [parallel](https://www.gnu.org/software/parallel/)   | Execute commands in parallel for faster automation and scripting. |
 
 ## 👾 Fun Utilities 
 | Tool                                  | Description                                                       |
