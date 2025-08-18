@@ -56,6 +56,8 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [aria2](https://github.com/aria2/aria2)             | Lightweight multi-protocol & multi-source command-line download utility. |
 | [speedtest-cli](https://github.com/sivel/speedtest-cli) | Test your internet bandwidth using speedtest.net from the terminal. |
 | [curlie](https://github.com/rs/curlie)              | Frontend for `curl` that mimics HTTPie syntax.                  |
+| [mitmproxy](https://mitmproxy.org/)                 | Interactive proxy for inspecting, testing, and debugging HTTP/S traffic. |
+| [wrk](https://github.com/wg/wrk)                    | A powerful HTTP benchmarking tool with multi-threaded design.    |
 
 ## ⚙️ Development and Data Processing
 
