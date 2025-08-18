@@ -73,6 +73,9 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [httpie](https://httpie.io/)              | User-friendly HTTP client for testing APIs with JSON support and clean syntax. |
 | [bat](https://github.com/sharkdp/bat)     | A `cat` clone with syntax highlighting and Git integration.                |
 | [fzf](https://github.com/junegunn/fzf)    | Interactive fuzzy finder for searching files, commands, processes, and more. |
+| [gh](https://cli.github.com/)             | GitHub CLI to manage repositories, pull requests, and issues directly from the terminal. |
+| [csvkit](https://csvkit.readthedocs.io/)  | A suite of utilities for converting and analyzing CSV files in the terminal. |
+| [xsv](https://github.com/BurntSushi/xsv) | A fast CSV toolkit designed for working efficiently with large CSV files.  |
 
 ## 🔧 Integration and Utilities
 
