@@ -60,6 +60,8 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [curlie](https://github.com/rs/curlie)              | Frontend for `curl` that mimics HTTPie syntax.                  |
 | [mitmproxy](https://mitmproxy.org/)                 | Interactive proxy for inspecting, testing, and debugging HTTP/S traffic. |
 | [wrk](https://github.com/wg/wrk)                    | A powerful HTTP benchmarking tool with multi-threaded design.    |
+| [iperf3](https://github.com/esnet/iperf)                             | Tool for measuring network bandwidth and performance between two hosts.     |
+| [netcat (nc)](https://netcat.sourceforge.net/)                       | Versatile networking tool for TCP/UDP connections, debugging, and testing.  |
 
 ## ⚙️ Development and Data Processing
 
