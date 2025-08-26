@@ -31,6 +31,9 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [bpytop](https://github.com/aristocratos/bpytop)   | Resource monitor with a slick UI in the terminal.               |
 | [iotop](https://linux.die.net/man/1/iotop)          | Show I/O usage by processes in real-time.                       |
 | [bottom](https://github.com/ClementTsang/bottom)    | Yet another cross-platform graphical process/system monitor.    |
+| [atop](https://www.atoptool.nl/)      | Advanced resource monitor with long-term logging & analysis.      |
+| [iftop](http://www.ex-parrot.com/~pdw/iftop/) | Real-time bandwidth usage per connection on network interfaces. |
+| [Netdata](https://www.netdata.cloud/) | Real-time web dashboard with full system metrics & graphs.        |
 
 ## 📂 File and Directory Management
 
