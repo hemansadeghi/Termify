@@ -97,6 +97,10 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [autoenv](https://github.com/hyperupcall/autoenv)    | Similar to `direnv`, automatically loads environment variables when entering a directory. |
 | [chezmoi](https://www.chezmoi.io/)                   | Manage your dotfiles across multiple machines securely and consistently. |
 | [parallel](https://www.gnu.org/software/parallel/)   | Execute commands in parallel for faster automation and scripting. |
+| [overmind](https://github.com/DarthSim/overmind) | A modern Procfile manager for running multiple services simultaneously — great for microservices development. |
+| [pre-commit](https://pre-commit.com/) | A framework for managing and maintaining multi-language pre-commit hooks — useful for linting, formatting, and enforcing standards. |
+| [chezmoi](https://www.chezmoi.io/) | Securely manage your dotfiles across multiple machines with consistency and ease. |
+| [watchexec](https://github.com/watchexec/watchexec) | Run arbitrary commands in response to file changes — perfect for live reload during devel
 
 ## 👾 Fun Utilities 
 | Tool                                  | Description                                                       |
