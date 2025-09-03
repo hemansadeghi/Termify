@@ -65,6 +65,10 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [wrk](https://github.com/wg/wrk)                    | A powerful HTTP benchmarking tool with multi-threaded design.    |
 | [iperf3](https://github.com/esnet/iperf)                             | Tool for measuring network bandwidth and performance between two hosts.     |
 | [netcat (nc)](https://netcat.sourceforge.net/)                       | Versatile networking tool for TCP/UDP connections, debugging, and testing.  |
+| [tcpdump](https://www.tcpdump.org/) | Command-line packet analyzer for capturing and inspecting network traffic in real time. |
+| [wireshark](https://www.wireshark.org/) | A powerful GUI-based network protocol analyzer — great for deep traffic inspection and debugging. |
+| [socat](http://www.dest-unreach.org/socat/) | Multipurpose relay for bidirectional data transfer between two independent data channels. |
+| [proxychains](https://github.com/haad/proxychains) | Force any TCP connection to go through proxy servers such as TOR or SOCKS. |
 
 ## ⚙️ Development and Data Processing
 
