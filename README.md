@@ -19,6 +19,11 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [grex](https://github.com/pemistahl/grex) | Generates regular expressions from user-provided test cases. |
 | [ugrep](https://github.com/Genivia/ugrep) | Ultra-fast grep with UI interface, file globs, colors, and JSON support. |
 | [lazygit](https://github.com/jesseduffield/lazygit) | Simple terminal UI for git commands with search and filtering support. |
+| [exa](https://the.exa.website/) | Modern replacement for `ls` with colors, tree view, and git integration. |
+| [bat](https://github.com/sharkdp/bat) | A `cat` clone with syntax highlighting and line numbers. |
+| [jq](https://stedolan.github.io/jq/) | Command-line processor for JSON queries, filtering, and transformations. |
+| [xsv](https://github.com/BurntSushi/xsv) | Extremely fast CSV command-line toolkit for search, slicing, and analysis. |
+| [pup](https://github.com/ericchiang/pup) | Command-line HTML parsing tool with CSS selector support (like `jq` for HTML). |
 
 ## 🖥️ System Monitoring and Management
 
