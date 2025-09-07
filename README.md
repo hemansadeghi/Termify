@@ -39,6 +39,13 @@ A curated and up-to-date collection of command-line interface (CLI) tools for de
 | [atop](https://www.atoptool.nl/)      | Advanced resource monitor with long-term logging & analysis.      |
 | [iftop](http://www.ex-parrot.com/~pdw/iftop/) | Real-time bandwidth usage per connection on network interfaces. |
 | [Netdata](https://www.netdata.cloud/) | Real-time web dashboard with full system metrics & graphs.        |
+| [dstat](https://linux.die.net/man/1/dstat) | Versatile resource statistics tool combining vmstat, iostat, and netstat. |
+| [bmon](https://github.com/tgraf/bmon) | Real-time bandwidth monitor with a curses-based UI. |
+| [conky](https://github.com/brndnmtthws/conky) | Lightweight system monitor for the desktop with rich customization. |
+| [collectl](http://collectl.sourceforge.net/) | Lightweight logging tool for CPU, disk, memory, and network stats. |
+| [dive](https://github.com/wagoodman/dive) | Explore and analyze Docker image 
+layers to find wasted space. |
+
 
 ## 📂 File and Directory Management
 
