@@ -81,6 +81,17 @@ layers to find wasted space. |
 | [wireshark](https://www.wireshark.org/) | A powerful GUI-based network protocol analyzer — great for deep traffic inspection and debugging. |
 | [socat](http://www.dest-unreach.org/socat/) | Multipurpose relay for bidirectional data transfer between two independent data channels. |
 | [proxychains](https://github.com/haad/proxychains) | Force any TCP connection to go through proxy servers such as TOR or SOCKS. |
+| [mtr](https://github.com/traviscross/mtr) | Combines ping and traceroute for live network path diagnosis. |
+| [iftop](https://www.ex-parrot.com/~pdw/iftop/) | Real-time bandwidth usage per connection on network interfaces. |
+| [bmon](https://github.com/tgraf/bmon) | Real-time bandwidth monitor with curses-based UI. |
+| [masscan](https://github.com/robertdavidgraham/masscan) | Extremely fast port scanner for large networks. |
+| [suricata](https://suricata.io/) | High-performance IDS/IPS and network traffic analysis engine. |
+| [Zeek (Bro)](https://zeek.org/) | Network security monitoring platform, turning traffic into analyzable events. |
+| [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer for discovering directories, files, and parameters. |
+| [sqlmap](https://sqlmap.org/) | Automated tool to detect and exploit SQL Injection vulnerabilities. |
+| [Burp Suite Community](https://portswigger.net/burp/communitydownload) | Platform for web application security testing (proxy + tools). |
+| [tshark](https://www.wireshark.org/docs/man-pages/tshark.html) | Command-line version of Wireshark for capturing and analyzing packets. |
+
 
 ## ⚙️ Development and Data Processing
 
