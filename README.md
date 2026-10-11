@@ -39,6 +39,11 @@ Each tool appears **once**, in its most relevant category. Unmaintained projects
 | [peco](https://github.com/peco/peco) | Interactive filtering tool similar to `fzf`, useful for command pipelines. |
 | [grex](https://github.com/pemistahl/grex) | Generates regular expressions from user-provided test cases. |
 | [ugrep](https://github.com/Genivia/ugrep) | Ultra-fast grep with UI interface, file globs, colors, and JSON support. |
+| [ast-grep](https://github.com/ast-grep/ast-grep) | Structural code search, lint, and rewriting based on syntax trees. |
+| [ripgrep-all (rga)](https://github.com/phiresky/ripgrep-all) | Ripgrep extended to PDFs, e-books, Office docs, and archives. |
+| [miller (mlr)](https://github.com/johnkerl/miller) | Like sed and awk for CSV, JSON, and other tabular data. |
+| [choose](https://github.com/theryangeary/choose) | Human-friendly alternative to `cut` and `awk` for field selection. |
+| [pup](https://github.com/ericchiang/pup) | Command-line HTML parsing tool with CSS selector support (like `jq` for HTML). |
 
 ## 🖥️ System Monitoring and Management
 
@@ -59,6 +64,10 @@ Each tool appears **once**, in its most relevant category. Unmaintained projects
 | [zellij](https://github.com/zellij-org/zellij) | Modern terminal workspace with batteries included (alternative to `tmux`). |
 | [dive](https://github.com/wagoodman/dive) | Explore and analyze Docker image layers to find wasted space. |
 | [lazydocker](https://github.com/jesseduffield/lazydocker) | Simple terminal UI for Docker and docker-compose. |
+| [duf](https://github.com/muesli/duf) | Disk usage and free space at a glance (friendly `df` alternative). |
+| [procs](https://github.com/dalance/procs) | Modern replacement for `ps` with color, search, and tree views. |
+| [gping](https://github.com/orf/gping) | Ping with a live latency graph for one or many hosts. |
+| [nvtop](https://github.com/Syllo/nvtop) | Real-time GPU and accelerator process monitor. |
 
 ## 📂 File and Directory Management
 
@@ -76,6 +85,10 @@ Each tool appears **once**, in its most relevant category. Unmaintained projects
 | [vifm](https://github.com/vifm/vifm) | A file manager with vi-like keybindings for the terminal. |
 | [ranger](https://github.com/ranger/ranger) | Terminal-based file manager with previews and vim-style controls. |
 | [xplr](https://github.com/sayanarijit/xplr) | A fast, hackable, and extensible file manager for the terminal. |
+| [ouch](https://github.com/ouch-org/ouch) | Compress and decompress anything from the terminal with one command. |
+| [rclone](https://github.com/rclone/rclone) | Sync files with cloud storage providers like `rsync` for the cloud. |
+| [nnn](https://github.com/jarun/nnn) | Blazing-fast terminal file manager with minimal footprint. |
+| [superfile](https://github.com/yorukot/superfile) | Modern terminal file manager with a polished UI and plugin support. |
 
 ## 🌐 Networking and Web
 
@@ -107,6 +120,11 @@ Each tool appears **once**, in its most relevant category. Unmaintained projects
 | [ffuf](https://github.com/ffuf/ffuf) | Fast web fuzzer for discovering directories, files, and parameters. |
 | [sqlmap](https://sqlmap.org/) | Automated tool to detect and exploit SQL Injection vulnerabilities. |
 | [Burp Suite Community](https://portswigger.net/burp/communitydownload) | Platform for web application security testing (proxy + tools). |
+| [doggo](https://github.com/mr-karan/doggo) | Human-friendly DNS client with JSON output and DoH support. |
+| [bore](https://github.com/ekzhang/bore) | Minimal single-binary tunnels to expose localhost to the world. |
+| [httpstat](https://github.com/davecheney/httpstat) | Visualize `curl` statistics with a timing waterfall. |
+| [wuzz](https://github.com/asciimoo/wuzz) | Interactive terminal HTTP inspector for building and replaying requests. |
+| [termshark](https://github.com/gcla/termshark) | Terminal UI for `tshark` to inspect packets like Wireshark in text mode. |
 
 ## ⚙️ Development and Data Processing
 
@@ -126,6 +144,11 @@ Each tool appears **once**, in its most relevant category. Unmaintained projects
 | [glow](https://github.com/charmbracelet/glow) | Render markdown files with style in the terminal. |
 | [asciinema](https://asciinema.org/) | Terminal session recorder that allows you to share terminal demos as lightweight videos. |
 | [graph-cli](https://github.com/marqeta/graph-cli) | Generate ASCII graphs and charts directly from the terminal. |
+| [tig](https://github.com/jonas/tig) | Text-mode interface for browsing Git repositories and staging changes. |
+| [onefetch](https://github.com/o2sh/onefetch) | Show a Git repository summary with ASCII art, like neofetch for code. |
+| [tokei](https://github.com/XAMPPRocky/tokei) | Count lines of code, comments, and blanks across languages in seconds. |
+| [hyperfine](https://github.com/sharkdp/hyperfine) | Statistical command-line benchmarking with warmup and exports. |
+| [usql](https://github.com/xo/usql) | Universal SQL client for Postgres, MySQL, SQLite, and more. |
 
 ## 🔧 Integration and Utilities
 
@@ -142,6 +165,11 @@ Each tool appears **once**, in its most relevant category. Unmaintained projects
 | [overmind](https://github.com/DarthSim/overmind) | A modern Procfile manager for running multiple services simultaneously. |
 | [chezmoi](https://www.chezmoi.io/) | Manage your dotfiles across multiple machines securely and consistently. |
 | [pre-commit](https://pre-commit.com/) | A framework for managing multi-language pre-commit hooks for linting and formatting. |
+| [mise](https://github.com/jdx/mise) | Polyglot runtime and toolchain manager (Node, Python, Go, and more). |
+| [gum](https://github.com/charmbracelet/gum) | Build glamorous interactive shell scripts with prompts and spinners. |
+| [stow](https://www.gnu.org/software/stow/) | Manage dotfiles by symlinking package directories into place. |
+| [Bitwarden CLI (bw)](https://bitwarden.com/help/cli/) | Fetch passwords and secrets from your vault in scripts and prompts. |
+| [age](https://github.com/FiloSottile/age) | Simple, modern file encryption with small keys and no legacy baggage. |
 
 ## 👾 Fun Utilities
 
@@ -152,6 +180,9 @@ Each tool appears **once**, in its most relevant category. Unmaintained projects
 | [astroterm](https://github.com/da-luce/astroterm) | It displays the real-time positions of stars, planets, constellations, and more, all within your terminal! |
 | [pipes.sh](https://github.com/pipeseroni/pipes.sh) | Animated pipes terminal screensaver. |
 | [sl](https://github.com/mtoyoda/sl) | SL (Steam Locomotive) runs across your terminal when you type "sl" as you meant to type "ls". |
+| [fastfetch](https://github.com/fastfetch-cli/fastfetch) | Fast system information display with rich customization (neofetch successor). |
+| [lolcat](https://github.com/busyloop/lolcat) | Paint terminal output in rainbow gradients. |
+| [cbonsai](https://github.com/jallbrit/cbonsai) | Grow procedural bonsai trees in ASCII art. |
 
 ---
 
