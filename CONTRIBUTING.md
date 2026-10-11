@@ -8,15 +8,16 @@ Not all tools can be considered. The aim of this list is to provide a concise an
 - Have a free and open source license.
 - Be easy to install.
 - Be well documented.
+- Be actively maintained (archived/deprecated projects are replaced, not added).
 
 ## Pull Request Rules
 
 **Ground Rules:**
 
-- No duplicates.
+- No duplicates (each tool appears once, in its most relevant category).
 - Submit one app per pull request.
-- The app’s repository must be older than 90 days.
-- The app’s repository must have at least 20 stars on GitHub (if applicable).
+- The app's repository must be older than 90 days.
+- The app's repository must have at least 20 stars on GitHub (if applicable).
 
 **Formatting & Style:**
 
@@ -34,3 +35,5 @@ Not all tools can be considered. The aim of this list is to provide a concise an
 ## Other Contributions
 
 Pull requests that introduce new categories, fix typos, or improve documentation are always welcome! Feel free to ignore the app submission rules for these.
+
+Tip: run `./termify-sentinel.sh --github-only` before submitting to make sure your link is alive and the repo is not archived.
